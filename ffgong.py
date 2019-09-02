@@ -124,19 +124,19 @@ def getContent(data):
         print "img sava fail!"
         mlog("img sava fail!")
         filename += " [ error file save!] "
-    content = "\n{}\n{}\n{}\n{}src='{}'\nimg src='http://106.12.217.32/fghhhk/{}'".format(t,s[1],s[0],s[2],s[3],filename)
+    content = "\n{}\n{}\n{}\n{}src='{}'\nimg src='http://xxxxxxx/fghhhk/{}'".format(t,s[1],s[0],s[2],s[3],filename)
     return content
     
 def sendmail(content):
     
-    #receivers = ["673588037@qq.com","imfucihua@qq.com"]
-    receivers = ["imfucihua@qq.com"]    
-    mail_host="smtp.163.com" 
+    
+    receivers = ["xxxxxxxx@qq.com"]    
+  
     mail_host = "smtp.tom.com"
-    mail_user="chglory@163.com"   
+     
     mail_user = "zhangsan855@tom.com"
-    mail_pass="zhangsan@2019" 
-    mail_pass = "admin123"
+   
+    mail_pass = "xxxxxx"
     sender = mail_user
     message = MIMEText(content, 'plain')
     message['From'] = Header(mail_user)
